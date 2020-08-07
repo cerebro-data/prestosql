@@ -28,6 +28,7 @@ public class PasswordAuthenticatorPlugin
         return ImmutableList.<PasswordAuthenticatorFactory>builder()
                 .add(new FileAuthenticatorFactory())
                 .add(new LdapAuthenticatorFactory())
+                .add(new OkeraAuthenticatorFactory())
                 .build();
     }
 }
